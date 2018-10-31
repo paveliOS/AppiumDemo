@@ -91,15 +91,15 @@ extension Appium: RemoteControlService {
             if let err = error {
                 NSLog(err.description)
             }
-            callback?(nil)
+            callback?(error)
         }
     }
     
     func tapOnDevice(sessionID: String, x: Double, y: Double, callback: ((RemoteControlServiceError?) -> Void)?) {
         let tapOptions = AppiumTouchOptions(element: nil, x: x, y: y, count: 1)
         let tapAction = AppiumTouchAction(action: "tap", options: tapOptions)
-        let moveToReq = AppiumRequestPerformTouchOnDevice(session_id: sessionID, actions: [tapAction])
-        executeAppiumRequest(request: moveToReq, decodeAs: AppiumResponse.self) { response, error in
+        let tapReq = AppiumRequestPerformTouchOnDevice(session_id: sessionID, actions: [tapAction])
+        executeAppiumRequest(request: tapReq, decodeAs: AppiumResponse.self) { response, error in
             if let err = error {
                 NSLog(err.description)
             }

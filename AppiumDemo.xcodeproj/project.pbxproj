@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F6631E16DF454A4B1E79A5 /* Pods_AppiumDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D63058755618B1B0CC02A0 /* Pods_AppiumDemo.framework */; };
+		6CCD158B2183529900470B8E /* HTTPRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD15862183529900470B8E /* HTTPRequestError.swift */; };
+		6CCD158C2183529900470B8E /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD15872183529900470B8E /* HTTPRequestMethod.swift */; };
+		6CCD158D2183529900470B8E /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD15882183529900470B8E /* HTTPRequest.swift */; };
+		6CCD158E2183529900470B8E /* HTTPRequestParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD15892183529900470B8E /* HTTPRequestParameterEncoding.swift */; };
+		6CCD158F2183529900470B8E /* HTTPRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD158A2183529900470B8E /* HTTPRequestService.swift */; };
+		6CCD15932183538B00470B8E /* Appium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD15922183538B00470B8E /* Appium.swift */; };
+		6CCD15972183582F00470B8E /* RemoteControlServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD15962183582F00470B8E /* RemoteControlServiceError.swift */; };
+		6CCD159A21835C6E00470B8E /* RemoteControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD159921835C6E00470B8E /* RemoteControlService.swift */; };
+		6CCD159C21835D3300470B8E /* RemoteControlSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD159B21835D3300470B8E /* RemoteControlSessionResponse.swift */; };
+		6CCD159E21835DDC00470B8E /* RemoteControlDeviceScreenshotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD159D21835DDC00470B8E /* RemoteControlDeviceScreenshotResponse.swift */; };
+		6CCD15A4218364A000470B8E /* AppiumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD15A3218364A000470B8E /* AppiumResponse.swift */; };
+		F73B3E9D217E24BE00420EAB /* RemoteControlRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B3E9C217E24BE00420EAB /* RemoteControlRouter.swift */; };
+		F73B3E9F217E2AEA00420EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73B3E9E217E2AEA00420EAB /* Main.storyboard */; };
+		F73B3EA2217E2BF400420EAB /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B3EA1217E2BF400420EAB /* MainWindowController.swift */; };
+		F73B3F1C217E3E6500420EAB /* AppiumResponseCreateRemoteControlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B3F1B217E3E6500420EAB /* AppiumResponseCreateRemoteControlSession.swift */; };
+		F73B3F1F217E4D9C00420EAB /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B3F1E217E4D9C00420EAB /* UserDefaults+.swift */; };
+		F73B3F22217E4EDC00420EAB /* AlertDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B3F21217E4EDC00420EAB /* AlertDisplayer.swift */; };
+		F73B3F24217E500B00420EAB /* AppiumResponseTakeDeviceScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B3F23217E500B00420EAB /* AppiumResponseTakeDeviceScreenshot.swift */; };
+		F757C0A52188D75100EB65AA /* AppiumTouchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F757C0A42188D75100EB65AA /* AppiumTouchOptions.swift */; };
+		F757C0A72188D8EA00EB65AA /* AppiumTouchAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F757C0A62188D8EA00EB65AA /* AppiumTouchAction.swift */; };
+		F782F1D4217E231B00CB386A /* RemoteControlPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782F1D3217E231B00CB386A /* RemoteControlPresenter.swift */; };
+		F7939F472189A8C8002989D0 /* AppiumRequestDeviceWindowSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7939F462189A8C8002989D0 /* AppiumRequestDeviceWindowSize.swift */; };
+		F7939F492189A9BA002989D0 /* AppiumResponseDeviceWindowSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7939F482189A9BA002989D0 /* AppiumResponseDeviceWindowSize.swift */; };
+		F7939F4B2189AC74002989D0 /* RemoteControlDeviceWindowSizeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7939F4A2189AC74002989D0 /* RemoteControlDeviceWindowSizeResponse.swift */; };
+		F7A8D9EF217E5D5A00B8EBCD /* AppiumErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8D9EE217E5D5A00B8EBCD /* AppiumErrorResponse.swift */; };
+		F7A8D9F1217E650A00B8EBCD /* AppiumResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A8D9F0217E650A00B8EBCD /* AppiumResponseStatus.swift */; };
+		F7DEA423217D064A00462EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA422217D064A00462EF7 /* AppDelegate.swift */; };
+		F7DEA425217D064A00462EF7 /* RemoteControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA424217D064A00462EF7 /* RemoteControlViewController.swift */; };
+		F7DEA427217D064A00462EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DEA426217D064A00462EF7 /* Assets.xcassets */; };
+		F7DEA436217D06E000462EF7 /* RemoteControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DEA435217D06E000462EF7 /* RemoteControl.storyboard */; };
+		F7DEA448217D071600462EF7 /* AppiumRequestTakeDeviceScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA43A217D071600462EF7 /* AppiumRequestTakeDeviceScreenshot.swift */; };
+		F7DEA449217D071600462EF7 /* AppiumRequestCreateRemoteControlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA43B217D071600462EF7 /* AppiumRequestCreateRemoteControlSession.swift */; };
+		F7DEA44B217D071600462EF7 /* AppiumSessionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA43D217D071600462EF7 /* AppiumSessionRequest.swift */; };
+		F7DEA44C217D071600462EF7 /* AppiumRequestPerformTouchOnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA43E217D071600462EF7 /* AppiumRequestPerformTouchOnDevice.swift */; };
+		F7DEA44E217D071600462EF7 /* AppiumRequestEndRemoteControlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA440217D071600462EF7 /* AppiumRequestEndRemoteControlSession.swift */; };
+		F7DEA450217D071600462EF7 /* AppiumCapabilitiesRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA443217D071600462EF7 /* AppiumCapabilitiesRequirement.swift */; };
+		F7DEA451217D071600462EF7 /* AppiumCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEA444217D071600462EF7 /* AppiumCapabilities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20D63058755618B1B0CC02A0 /* Pods_AppiumDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppiumDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD95D9A58C9E6465684A64B /* Pods-AppiumDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppiumDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppiumDemo/Pods-AppiumDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		54258219D71702E59A53CD1A /* Pods-AppiumDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppiumDemo.release.xcconfig"; path = "Target Support Files/Pods-AppiumDemo/Pods-AppiumDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6CCD15862183529900470B8E /* HTTPRequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestError.swift; sourceTree = "<group>"; };
+		6CCD15872183529900470B8E /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
+		6CCD15882183529900470B8E /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		6CCD15892183529900470B8E /* HTTPRequestParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestParameterEncoding.swift; sourceTree = "<group>"; };
+		6CCD158A2183529900470B8E /* HTTPRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestService.swift; sourceTree = "<group>"; };
+		6CCD15922183538B00470B8E /* Appium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appium.swift; sourceTree = "<group>"; };
+		6CCD15962183582F00470B8E /* RemoteControlServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlServiceError.swift; sourceTree = "<group>"; };
+		6CCD159921835C6E00470B8E /* RemoteControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlService.swift; sourceTree = "<group>"; };
+		6CCD159B21835D3300470B8E /* RemoteControlSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlSessionResponse.swift; sourceTree = "<group>"; };
+		6CCD159D21835DDC00470B8E /* RemoteControlDeviceScreenshotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlDeviceScreenshotResponse.swift; sourceTree = "<group>"; };
+		6CCD15A3218364A000470B8E /* AppiumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumResponse.swift; sourceTree = "<group>"; };
+		F73B3E9C217E24BE00420EAB /* RemoteControlRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlRouter.swift; sourceTree = "<group>"; };
+		F73B3E9E217E2AEA00420EAB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F73B3EA1217E2BF400420EAB /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		F73B3F1B217E3E6500420EAB /* AppiumResponseCreateRemoteControlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumResponseCreateRemoteControlSession.swift; sourceTree = "<group>"; };
+		F73B3F1E217E4D9C00420EAB /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		F73B3F21217E4EDC00420EAB /* AlertDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplayer.swift; sourceTree = "<group>"; };
+		F73B3F23217E500B00420EAB /* AppiumResponseTakeDeviceScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumResponseTakeDeviceScreenshot.swift; sourceTree = "<group>"; };
+		F757C0A42188D75100EB65AA /* AppiumTouchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumTouchOptions.swift; sourceTree = "<group>"; };
+		F757C0A62188D8EA00EB65AA /* AppiumTouchAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumTouchAction.swift; sourceTree = "<group>"; };
+		F782F1D3217E231B00CB386A /* RemoteControlPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlPresenter.swift; sourceTree = "<group>"; };
+		F7939F462189A8C8002989D0 /* AppiumRequestDeviceWindowSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumRequestDeviceWindowSize.swift; sourceTree = "<group>"; };
+		F7939F482189A9BA002989D0 /* AppiumResponseDeviceWindowSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumResponseDeviceWindowSize.swift; sourceTree = "<group>"; };
+		F7939F4A2189AC74002989D0 /* RemoteControlDeviceWindowSizeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlDeviceWindowSizeResponse.swift; sourceTree = "<group>"; };
+		F7A8D9EE217E5D5A00B8EBCD /* AppiumErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumErrorResponse.swift; sourceTree = "<group>"; };
+		F7A8D9F0217E650A00B8EBCD /* AppiumResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppiumResponseStatus.swift; sourceTree = "<group>"; };
+		F7DEA41F217D064900462EF7 /* AppiumDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppiumDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DEA422217D064A00462EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7DEA424217D064A00462EF7 /* RemoteControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlViewController.swift; sourceTree = "<group>"; };
+		F7DEA426217D064A00462EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7DEA42B217D064A00462EF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DEA42C217D064A00462EF7 /* AppiumDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppiumDemo.entitlements; sourceTree = "<group>"; };
+		F7DEA435217D06E000462EF7 /* RemoteControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RemoteControl.storyboard; sourceTree = "<group>"; };
+		F7DEA43A217D071600462EF7 /* AppiumRequestTakeDeviceScreenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppiumRequestTakeDeviceScreenshot.swift; sourceTree = "<group>"; };
+		F7DEA43B217D071600462EF7 /* AppiumRequestCreateRemoteControlSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppiumRequestCreateRemoteControlSession.swift; sourceTree = "<group>"; };
+		F7DEA43D217D071600462EF7 /* AppiumSessionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppiumSessionRequest.swift; sourceTree = "<group>"; };
+		F7DEA43E217D071600462EF7 /* AppiumRequestPerformTouchOnDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppiumRequestPerformTouchOnDevice.swift; sourceTree = "<group>"; };
+		F7DEA440217D071600462EF7 /* AppiumRequestEndRemoteControlSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppiumRequestEndRemoteControlSession.swift; sourceTree = "<group>"; };
+		F7DEA443217D071600462EF7 /* AppiumCapabilitiesRequirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppiumCapabilitiesRequirement.swift; sourceTree = "<group>"; };
+		F7DEA444217D071600462EF7 /* AppiumCapabilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppiumCapabilities.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7DEA41C217D064900462EF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F6631E16DF454A4B1E79A5 /* Pods_AppiumDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		144B052FBF9D26CD2BBFA607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20D63058755618B1B0CC02A0 /* Pods_AppiumDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38E3A0489183E3954DE78485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DD95D9A58C9E6465684A64B /* Pods-AppiumDemo.debug.xcconfig */,
+				54258219D71702E59A53CD1A /* Pods-AppiumDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6CCD15852183529900470B8E /* httpRequestService */ = {
+			isa = PBXGroup;
+			children = (
+				6CCD158A2183529900470B8E /* HTTPRequestService.swift */,
+				6CCD15882183529900470B8E /* HTTPRequest.swift */,
+				6CCD15872183529900470B8E /* HTTPRequestMethod.swift */,
+				6CCD15892183529900470B8E /* HTTPRequestParameterEncoding.swift */,
+				6CCD15862183529900470B8E /* HTTPRequestError.swift */,
+			);
+			path = httpRequestService;
+			sourceTree = "<group>";
+		};
+		6CCD15902183535B00470B8E /* appium */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEA437217D071600462EF7 /* mapping */,
+				6CCD15922183538B00470B8E /* Appium.swift */,
+			);
+			path = appium;
+			sourceTree = "<group>";
+		};
+		6CCD159821835C5B00470B8E /* remoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				6CCD15902183535B00470B8E /* appium */,
+				6CCD159921835C6E00470B8E /* RemoteControlService.swift */,
+				6CCD15962183582F00470B8E /* RemoteControlServiceError.swift */,
+				6CCD159B21835D3300470B8E /* RemoteControlSessionResponse.swift */,
+				6CCD159D21835DDC00470B8E /* RemoteControlDeviceScreenshotResponse.swift */,
+				F7939F4A2189AC74002989D0 /* RemoteControlDeviceWindowSizeResponse.swift */,
+			);
+			path = remoteControl;
+			sourceTree = "<group>";
+		};
+		F73B3EA0217E2BE000420EAB /* main */ = {
+			isa = PBXGroup;
+			children = (
+				F73B3EA1217E2BF400420EAB /* MainWindowController.swift */,
+				F73B3E9E217E2AEA00420EAB /* Main.storyboard */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		F73B3F1D217E4D8D00420EAB /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F73B3F1E217E4D9C00420EAB /* UserDefaults+.swift */,
+			);
+			path = persistence;
+			sourceTree = "<group>";
+		};
+		F73B3F20217E4EC700420EAB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F73B3F21217E4EDC00420EAB /* AlertDisplayer.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F782F1D0217E20A000CB386A /* response */ = {
+			isa = PBXGroup;
+			children = (
+				F73B3F1B217E3E6500420EAB /* AppiumResponseCreateRemoteControlSession.swift */,
+				F7939F482189A9BA002989D0 /* AppiumResponseDeviceWindowSize.swift */,
+				F73B3F23217E500B00420EAB /* AppiumResponseTakeDeviceScreenshot.swift */,
+				F7A8D9EE217E5D5A00B8EBCD /* AppiumErrorResponse.swift */,
+				6CCD15A3218364A000470B8E /* AppiumResponse.swift */,
+				F7A8D9F0217E650A00B8EBCD /* AppiumResponseStatus.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		F7DEA416217D064900462EF7 = {
+			isa = PBXGroup;
+			children = (
+				F7DEA421217D064900462EF7 /* AppiumDemo */,
+				F7DEA420217D064900462EF7 /* Products */,
+				38E3A0489183E3954DE78485 /* Pods */,
+				144B052FBF9D26CD2BBFA607 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F7DEA420217D064900462EF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEA41F217D064900462EF7 /* AppiumDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7DEA421217D064900462EF7 /* AppiumDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEA432217D067700462EF7 /* scenes */,
+				F7DEA433217D067C00462EF7 /* model */,
+				F73B3F20217E4EC700420EAB /* utils */,
+				F7DEA422217D064A00462EF7 /* AppDelegate.swift */,
+				F7DEA426217D064A00462EF7 /* Assets.xcassets */,
+				F7DEA42B217D064A00462EF7 /* Info.plist */,
+				F7DEA42C217D064A00462EF7 /* AppiumDemo.entitlements */,
+			);
+			path = AppiumDemo;
+			sourceTree = "<group>";
+		};
+		F7DEA432217D067700462EF7 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F73B3EA0217E2BE000420EAB /* main */,
+				F7DEA434217D06C500462EF7 /* remoteControl */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		F7DEA433217D067C00462EF7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6CCD159821835C5B00470B8E /* remoteControl */,
+				F73B3F1D217E4D8D00420EAB /* persistence */,
+				6CCD15852183529900470B8E /* httpRequestService */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F7DEA434217D06C500462EF7 /* remoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				F73B3E9C217E24BE00420EAB /* RemoteControlRouter.swift */,
+				F7DEA424217D064A00462EF7 /* RemoteControlViewController.swift */,
+				F782F1D3217E231B00CB386A /* RemoteControlPresenter.swift */,
+				F7DEA435217D06E000462EF7 /* RemoteControl.storyboard */,
+			);
+			path = remoteControl;
+			sourceTree = "<group>";
+		};
+		F7DEA437217D071600462EF7 /* mapping */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEA438217D071600462EF7 /* request */,
+				F782F1D0217E20A000CB386A /* response */,
+				F7DEA442217D071600462EF7 /* remote */,
+			);
+			path = mapping;
+			sourceTree = "<group>";
+		};
+		F7DEA438217D071600462EF7 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEA43B217D071600462EF7 /* AppiumRequestCreateRemoteControlSession.swift */,
+				F7DEA440217D071600462EF7 /* AppiumRequestEndRemoteControlSession.swift */,
+				F7939F462189A8C8002989D0 /* AppiumRequestDeviceWindowSize.swift */,
+				F7DEA43A217D071600462EF7 /* AppiumRequestTakeDeviceScreenshot.swift */,
+				F7DEA43E217D071600462EF7 /* AppiumRequestPerformTouchOnDevice.swift */,
+				F7DEA43D217D071600462EF7 /* AppiumSessionRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		F7DEA442217D071600462EF7 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEA443217D071600462EF7 /* AppiumCapabilitiesRequirement.swift */,
+				F7DEA444217D071600462EF7 /* AppiumCapabilities.swift */,
+				F757C0A42188D75100EB65AA /* AppiumTouchOptions.swift */,
+				F757C0A62188D8EA00EB65AA /* AppiumTouchAction.swift */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7DEA41E217D064900462EF7 /* AppiumDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DEA42F217D064A00462EF7 /* Build configuration list for PBXNativeTarget "AppiumDemo" */;
+			buildPhases = (
+				DF77E453B80A671BDFA3AD29 /* [CP] Check Pods Manifest.lock */,
+				F7DEA41B217D064900462EF7 /* Sources */,
+				F7DEA41C217D064900462EF7 /* Frameworks */,
+				F7DEA41D217D064900462EF7 /* Resources */,
+				803298949BF2A99DA67246E1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppiumDemo;
+			productName = AppiumDemo;
+			productReference = F7DEA41F217D064900462EF7 /* AppiumDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7DEA417217D064900462EF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Pavlo;
+				TargetAttributes = {
+					F7DEA41E217D064900462EF7 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = F7DEA41A217D064900462EF7 /* Build configuration list for PBXProject "AppiumDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7DEA416217D064900462EF7;
+			productRefGroup = F7DEA420217D064900462EF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7DEA41E217D064900462EF7 /* AppiumDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7DEA41D217D064900462EF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F73B3E9F217E2AEA00420EAB /* Main.storyboard in Resources */,
+				F7DEA436217D06E000462EF7 /* RemoteControl.storyboard in Resources */,
+				F7DEA427217D064A00462EF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		803298949BF2A99DA67246E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppiumDemo/Pods-AppiumDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppiumDemo/Pods-AppiumDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF77E453B80A671BDFA3AD29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppiumDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7DEA41B217D064900462EF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7DEA44E217D071600462EF7 /* AppiumRequestEndRemoteControlSession.swift in Sources */,
+				F7DEA448217D071600462EF7 /* AppiumRequestTakeDeviceScreenshot.swift in Sources */,
+				F73B3E9D217E24BE00420EAB /* RemoteControlRouter.swift in Sources */,
+				6CCD159E21835DDC00470B8E /* RemoteControlDeviceScreenshotResponse.swift in Sources */,
+				6CCD158D2183529900470B8E /* HTTPRequest.swift in Sources */,
+				6CCD158E2183529900470B8E /* HTTPRequestParameterEncoding.swift in Sources */,
+				F7939F472189A8C8002989D0 /* AppiumRequestDeviceWindowSize.swift in Sources */,
+				6CCD15972183582F00470B8E /* RemoteControlServiceError.swift in Sources */,
+				F757C0A52188D75100EB65AA /* AppiumTouchOptions.swift in Sources */,
+				F7DEA44B217D071600462EF7 /* AppiumSessionRequest.swift in Sources */,
+				F7939F492189A9BA002989D0 /* AppiumResponseDeviceWindowSize.swift in Sources */,
+				6CCD15A4218364A000470B8E /* AppiumResponse.swift in Sources */,
+				F7DEA425217D064A00462EF7 /* RemoteControlViewController.swift in Sources */,
+				F7939F4B2189AC74002989D0 /* RemoteControlDeviceWindowSizeResponse.swift in Sources */,
+				F7DEA423217D064A00462EF7 /* AppDelegate.swift in Sources */,
+				6CCD159C21835D3300470B8E /* RemoteControlSessionResponse.swift in Sources */,
+				F73B3F24217E500B00420EAB /* AppiumResponseTakeDeviceScreenshot.swift in Sources */,
+				F7DEA44C217D071600462EF7 /* AppiumRequestPerformTouchOnDevice.swift in Sources */,
+				F7DEA451217D071600462EF7 /* AppiumCapabilities.swift in Sources */,
+				F73B3F1F217E4D9C00420EAB /* UserDefaults+.swift in Sources */,
+				6CCD15932183538B00470B8E /* Appium.swift in Sources */,
+				F73B3F1C217E3E6500420EAB /* AppiumResponseCreateRemoteControlSession.swift in Sources */,
+				F7A8D9EF217E5D5A00B8EBCD /* AppiumErrorResponse.swift in Sources */,
+				F73B3EA2217E2BF400420EAB /* MainWindowController.swift in Sources */,
+				F73B3F22217E4EDC00420EAB /* AlertDisplayer.swift in Sources */,
+				F7A8D9F1217E650A00B8EBCD /* AppiumResponseStatus.swift in Sources */,
+				6CCD158C2183529900470B8E /* HTTPRequestMethod.swift in Sources */,
+				F782F1D4217E231B00CB386A /* RemoteControlPresenter.swift in Sources */,
+				6CCD158B2183529900470B8E /* HTTPRequestError.swift in Sources */,
+				6CCD158F2183529900470B8E /* HTTPRequestService.swift in Sources */,
+				F7DEA449217D071600462EF7 /* AppiumRequestCreateRemoteControlSession.swift in Sources */,
+				F7DEA450217D071600462EF7 /* AppiumCapabilitiesRequirement.swift in Sources */,
+				6CCD159A21835C6E00470B8E /* RemoteControlService.swift in Sources */,
+				F757C0A72188D8EA00EB65AA /* AppiumTouchAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F7DEA42D217D064A00462EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7DEA42E217D064A00462EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F7DEA430217D064A00462EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD95D9A58C9E6465684A64B /* Pods-AppiumDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppiumDemo/AppiumDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AppiumDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AppiumDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		F7DEA431217D064A00462EF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54258219D71702E59A53CD1A /* Pods-AppiumDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppiumDemo/AppiumDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AppiumDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AppiumDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7DEA41A217D064900462EF7 /* Build configuration list for PBXProject "AppiumDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DEA42D217D064A00462EF7 /* Debug */,
+				F7DEA42E217D064A00462EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DEA42F217D064A00462EF7 /* Build configuration list for PBXNativeTarget "AppiumDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DEA430217D064A00462EF7 /* Debug */,
+				F7DEA431217D064A00462EF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7DEA417217D064900462EF7 /* Project object */;
+}
